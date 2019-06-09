@@ -1,0 +1,685 @@
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>E-Commerce Website</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+          <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+
+
+
+    <!--BODY-->
+    <body>
+
+      <!--Header-->
+      <div class="header">
+        <h1 class="text-center">You-Beauty</h1>
+      </div>
+      <!--End of Header-->
+
+      <!--Banner-->
+      <div class="hero-image">
+        <img class="img-fluid" src="Images/Banner.png" alt="Banner Image">
+        <button class="Banner-btn" name="button"><a href="#navbar" style="color: white">Show Now</a></button>
+      </div>
+      <!--End of Banner-->
+
+      <!--Navigation Bar-->
+      <nav id="navbar" class="navbar navbar-expand-md sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+          <span class="navbar-toggler-icon"><i class='fas fa-bars' style='font-size:36px'></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-link" onclick="openPage('Face Cream', this, '#7373a5')">Face Cream</li>
+            <li class="nav-link" onclick="openPage('Lipstick', this, '#7373a5')" id="defaultOpen">Lipstick</li>
+            <li class="nav-link" onclick="openPage('Shampoo', this, '#7373a5')">Shampoo</li>
+            <li class="nav-link" onclick="openPage('Nails', this, '#7373a5')">Nails</li>
+          </ul>
+        </div>
+        <ul class="navbar-nav ml-auto nav-flex-icons" >
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <table id="cart-table" style="width:50%;color:white;margin-left: 30%;">
+                <tr>
+                  <th>Product Name</th>
+                  <th>Product Price</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th>Total Price</th>
+                  <th id="total"></th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <button  class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#Shopping-cart" onclick="openNav()">Cart
+            <i class="material-icons" style="font-size:36px">shopping_cart</i>
+          </button>
+        </ul>
+      </nav>
+
+      <!--End of Navigation Bar-->
+
+                                                              <!--MAIN CONTENT-->
+
+      <!--Face Cream-->
+
+      <div id="Face Cream" class="tabcontent">
+        <div id="main-content" class="container-fluid" >
+          <div class="main-content" style="margin: 10%; margin-top: 3%;margin-bottom: 3%;padding:1px 16px">
+            <div class="row"style="margin-top: 2%">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/a6ce5b59-7761-4737-9e6d-b2fee895883f-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.behance.net/gallery/55046573/Cosmetic-Jar-Mockup">"Cosmetic Jar Mockup"</a><span> by <span>Graphic Assets</span></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 4.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/universalCream.jpg" alt="Universal Cream" style= "height:285px; width: 500px">
+                <h6>Universal Face Cream</h6><h6>$ 20</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button><h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://pixabay.com/photos/skin-care-of-baby-face-cream-liquid-827153/-->
+                <!-- Photo By qwer6695571
+                Accessed on - 5 May 2019 -->
+                <p><img class="img-thumbnail" src="images/silkyCream.jpg" alt="Silky Cream"  style= "height:285px; width: 500px">
+                <h6>Silky Cream</h6><h6>$ 15</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://pixabay.com/illustrations/cream-jar-white-skin-care-1464295/-->
+                <!-- Photo by jniittymaa0
+                Accessed on 5 May 2019 -->
+                <p><img class="img-thumbnail" src="images/brownCream.png" alt="Brown Cream" style= "height:285px; width: 500px">
+                  <h6>Brown Cream</h6><h6>$ 22</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/5040ecd6-ae2b-48db-940c-1ad8a2740779-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/72051149@N00/6840207874">"This helps me avoid sunburns during my runs. It works ;)"</a><span>by <a href="https://www.flickr.com/photos/72051149@N00">Ced</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/sunnyCream.jpg" alt="Sunny Cream" style= "height:285px; width: 500px">
+                <h6>Sunny Sunblock Face Cream</h6><h6>$ 15</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/93767db9-c141-4260-ba07-6e1963ae364d-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/92388598@N00/16333470001">"Foot cream"</a><span>by <a href="https://www.flickr.com/photos/92388598@N00">quimby</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/norweigenCream.jpg" alt="Norweigen Cream"  style= "height:285px; width: 500px">
+                <h6>Norweigen Cream</h6><h6>$ 10</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://www.pexels.com/photo/2003755/-->
+                <!-- Photo by beata dudova
+                Accessed on 5 May 2019 -->
+                <p><img class="img-thumbnail" src="images/mixaCream.jpg" alt="Mixa Cream" style= "height:285px; width: 500px">
+                  <h6>Mixa Cream</h6><h6>$ 22</h6>
+                  <h6><button class="cart-item"  style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://search.creativecommons.org/photos/b086de41-271d-4696-8769-0657de05d6e7-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/125267949@N02/31043303794">"Planet Spa ladies' cosmetics"</a><span>by <a href="https://www.flickr.com/photos/125267949@N02">Albert Lugosi</a></span> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a><a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/PlanetMask1.jpg" alt="Planet Mask" style= "height:285px; width: 500px">
+                  <h6>Planet Mask Cream</h6><h6>$ 20</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://search.creativecommons.org/photos/915e37c8-0fcb-4172-8c06-5c5d9b6d37c7-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.behance.net/gallery/55648403/Glossy-Cosmetic-Jar-Mockup-Front-View">"Glossy Cosmetic Jar Mockup - Front View"</a><span> by <span>Amina Viktoriia Mona</span></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 4.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/YellowCream1.jpg" alt="Yellow Cream" style= "height:285px; width: 500px">
+                <h6>Yellow Face Cream</h6><h6>$ 08</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+
+              </div>
+              <div class="col-sm-4">
+                <!--https://search.creativecommons.org/photos/2dd43c6a-ea52-47f7-8288-f39fef87b101-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/15066506@N02/2290576209">"Blue Combo"</a><span>by <a href="https://www.flickr.com/photos/15066506@N02">-l.i.l.l.i.a.n-</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-SA 2.0</a><a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/BlueCream.jpg" alt="Blue Cream" style= "height:285px; width: 540px">
+                 <h6>La Source Face Cream</h6><h6>$ 12</h6>
+                 <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/452813ae-76c5-48de-ab8e-897641b2e7f3-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.behance.net/gallery/40687211/LUMINOUS-Beauty-Products">"LUMINOUS ~ Beauty Products"</a><span>by <a href="https://www.behance.net/rajeevlalith">rajeev lalith</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 4.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/Luminous.jpg" alt="Luminous Cream" style= "height:285px; width: 500px">
+                  <h6>Luminous Face Cream</h6><h6>$ 05</h6>
+                  <h6><button class="cart-item"  style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/6eea775f-83a3-4005-ad2a-ca9e1e8312c8-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/68481813@N02/13225008773">"Natural Cocoa Butter Cream"</a><span>by <a href="https://www.flickr.com/photos/68481813@N02">jubaby_22</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-SA 2.0</a><a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/CocoaCream.jpg" alt="Cocoa Cream"  style= "height:285px; width: 500px">
+                  <h6>Natural Cocoa Cream</h6><h6>$ 32</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/9642d68a-bdc2-4a3a-b326-21647d8114a4-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/80551686@N00/2497154032">"Schwartz Hand / Feet Cream"</a><span>by <a href="https://www.flickr.com/photos/80551686@N00">rustybrick</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC 2.0</a><a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/SCHWARTZ.jpg" alt="SCHWARTZ Cream" style= "height:285px; width: 500px">
+                  <h6>SCHWARTZ Cream</h6><h6>$ 30</h6>
+                  <h6><button class="cart-item"  style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                                            <!--End of Face Cream-->
+
+
+                                                                  <!--Lipstick-->
+      <div id="Lipstick" class="tabcontent">
+        <div id="main-content" class="container-fluid" >
+          <div class="main-content" style="margin: 10%; margin-top: 3%;margin-bottom: 3%;padding:1px 16px">
+            <div class="row" style="margin-top: 2%">
+              <div class="col-sm-4">
+                <!--https://www.flickr.com/photos/63405864@N04/14166621904-->
+                <!-- photo by - Jamie Follow
+                Title - Colorful Nyx Macaron Lipsticks -->
+                <p><img  class="img-thumbnail" src="images/nyxlip.jpg" alt="NYX Lipstick" style= "height:285px; width: 500px">
+                  <h6>NYX Lipstick</h6><h6>$ 11</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/cd097e92-13da-4204-a147-7278d684c937-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/54841365@N08/6666068427">"slim-long-lasting-wear-lipstick"</a><span>by <a href="https://www.flickr.com/photos/54841365@N08">Yahala Fashion Shopping Online</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/Forever2lip.jpg" alt="Forever Pink Lipstick" style= "height:285px; width: 500px">
+                  <h6>Forever Pink Lipstick</h6><h6>$ 24</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://www.publicdomainpictures.net/en/view-image.php?image=251834&picture=red-lipstick-->
+                <p><img class="img-thumbnail" src="images/estelip.jpg" alt="LaSource" style= "height:285px; width: 540px">
+                 <h6>Este Lauder Lipstick</h6><h6>$ 45</h6>
+                 <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/622f7215-54b3-4227-9e69-f179eeb2dbbb-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/54841365@N08/6666068591">"Long Lasting LipGloss"</a><span>by <a href="https://www.flickr.com/photos/54841365@N08">Yahala Fashion Shopping Online</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/foreverlip.jpg" alt="Forever Lipstick" style= "height:285px; width: 500px">
+                <h6>Forever Lipstick</h6><h6>$ 50</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/9ce863ca-b6ba-4784-94c3-6ade836d8077-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/94212497@N00/44151903621">"Which one?"</a><span>by <a href="https://www.flickr.com/photos/94212497@N00">Rosmarie Voegtli</a></span> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a><a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/maclip.jpg" alt="Mac Lipstick" style= "height:285px; width: 500px">
+                <h6>MAC Lipstick</h6><h6>$ 90</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/683fbdee-aef0-4bba-80a3-f24fd70659d5-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/41256296@N07/21810755842">"Three perfect lipsticks I brought with me on my travels are up on the blog! Read about these and some of my other @neimanmarcus favorites on #TOBR {link in profile} #sponsored #shopstyleit 💄💋"</a><span>by <a href="https://www.flickr.com/photos/41256296@N07">Lauren_Hannah</a></span> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY 2.0</a><a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/bobbylip.jpg" alt="Bobby Brown Lipstick"  style= "height:285px; width: 500px">
+                <h6>Bobby Brown Lipstick</h6><h6>$ 20</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/6423bd51-f39f-43b8-b300-9e2b10f15d6b-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/9027560@N05/5571171162">"Rimmel Lipstick"</a><span>by <a href="https://www.flickr.com/photos/9027560@N05">Verónica Bautista</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/liptansiclip.jpg" alt="Liptansic Lipstick" style= "height:285px; width: 500px">
+                <h6>Liptansic Lipstick</h6><h6>$ 40</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/ce435544-6d8a-46e2-a6d1-a25abcce0450-->
+                <p><img  class="img-thumbnail" src="images/bblipstick.jpg" alt="BB Lipstick" style= "height:285px; width: 500px">
+                <h6>BB Lipstick</h6><h6>$ 15</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button><</h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/630834dc-de89-47fb-8bd6-8de8cacc67a1-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/47665598@N02/6982178352">""</a><span>by <a href="https://www.flickr.com/photos/47665598@N02">derivativeofcourse</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/reverselip.jpg" alt="Revlon Lipstick"  style= "height:285px; width: 500px">
+                <h6>Revlon Lipstick</h6><h6>$ 19</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/7b8806b7-40b0-4536-a821-9cb22a0c4e21-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/8700169@N03/19438957389">"Rouge Kiss"</a><span>by <a href="https://www.flickr.com/photos/8700169@N03">awee_19</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/kisslip.jpg" alt="Kiss Lipstick" style= "height:285px; width: 500px">
+                <h6>Kiss Lipstick</h6><h6>$ 25</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/b72f07d6-71ef-41ab-8c91-1d9f4760536f-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/8700169@N03/16601207834">"Burberry Pink Azalea"</a><span>by <a href="https://www.flickr.com/photos/8700169@N03">awee_19</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/bulberrylip.jpg" alt="Bulberry Lipstick" style= "height:285px; width: 500px">
+                <h6>Bulberry Lipstick</h6><h6>$ 30</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/ecf77845-345b-47d2-a85a-0c2cb44bd452-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/84428067@N00/4421771880">"Lip Stick :: Fix"</a><span>by <a href="https://www.flickr.com/photos/84428067@N00">ezezfun</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/lidalip.jpg" alt="Lida Lipstick"  style= "height:285px; width: 500px">
+                <h6>Lida Lipstick</h6><h6>$ 10</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                                                            <!--End of Lipstick-->
+
+
+                                                            <!--Shampoo-->
+      <div id="Shampoo" class="tabcontent">
+        <div id="main-content" class="container-fluid" >
+          <div class="main-content" style="margin: 10%; margin-top: 3%;margin-bottom: 3%;padding:1px 16px">
+            <div class="row" style="margin-top: 2%">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/65121d03-1555-43b5-b289-1e29eac4e91c-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/42834457@N00/5375708272">"Raidoitetuille pohjoismaisille hiuksille"</a><span>by <a href="https://www.flickr.com/photos/42834457@N00">hlehto</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/gardenShampoo.jpg" alt="Garden Shampoo" style= "height:285px; width: 500px">
+                    <h6>Garden Shampoo</h6><h6>$ 10</h6>
+                    <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://www.flickr.com/photos/takot/4804922749-->
+                <!-- Photo by Takashi Ota
+                Title - Soaps and Shampoos
+                Description - POLA's shampoo, conditioner, and body soap.
+                Accessed on 5 May 2019-->
+                <p>
+                  <img  class="img-thumbnail" src="images/shampoo1.jpg" alt="Shampoo 1" style= "height:285px; width: 500px">
+                  <h6>Shampoo 1</h6><h6>$ 30</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://www.flickr.com/photos/jeepersmedia/15976353720-->
+                <!-- Photo by Mike Mozart
+                Title - Head & Shoulders Dandruff Shampoo
+                Description - Head & Shoulders Dandruff Shampoo, 1/2015, by Mike Mozart of TheToyChannel and JeepersMedia on YouTube.
+                Accessed on 5 May 2019-->
+                <p><img class="img-thumbnail" src="images/h&dShampoo.jpg" alt="H&D Shampoo" style= "height:285px; width: 500px">
+                  <h6>H&D Shampoo</h6><h6>$ 12</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://pixabay.com/photos/bottle-isolated-bottle-shampoo-1860617/-->
+                <!-- Photo by bijutoha
+                Accessed on 5 May 2019 -->
+                <p><img class="img-thumbnail" src="images/BlueShampoo.png" alt="Blue Shampoo"  style= "height:285px; width: 500px">
+                  <h6>Blue Shampoo</h6><h6>$ 35</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6></p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://commons.wikimedia.org/wiki/File:Sedal_Shampoo.jpg-->
+                <!-- Photo by Jorge Barrios
+                Description - Español: Botella de Champú Sedal, faricado por Unilever.
+                Accessed on 5 May 2019 -->
+                <p><img  class="img-thumbnail" src="images/sedalShampoo.jpg" alt="Sedal Shampoo" style= "height:285px; width: 500px">
+                  <h6>Sedal Shampoo</h6><h6>$ 20</h6>
+                  <h6>
+                    <button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button>
+                  </h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://www.flickr.com/photos/jeepersmedia/15011567100/in/photostream/-->
+                <!-- Photo by - Mike Mozart
+                Title - Pantene Shampoo and Conditioner, 9/2014
+                Description - Mozart of TheToyChannel and JeepersMedia on YouTube #Pantene #Shampoo #Conditioner
+                Accessed on 5 May 2019  -->
+                <p><img class="img-thumbnail" src="images/PantsShampoo.jpg" alt="Pants Shampoo" style= "height:285px; width: 540px">
+                   <h6>Pants Shampoo</h6><h6>$ 22</h6>
+                   <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                 </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/9af57a40-3613-4ad9-942d-f109733ea152-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.behance.net/gallery/843747/MAXLISS">"MAXLISS"</a><span> by <span>Thiago Calza</span></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 4.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/spongeShampoo.jpg" alt="Sponge Shampoo"  style= "height:285px; width: 500px">
+                  <h6>Sponge Shampoo</h6><h6>$ 28</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/557f715e-cc97-40c9-ab10-88d0ce614847-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/22508531@N08/38620285062">"Balea Toffee Love Shampoo"</a><span>by <a href="https://www.flickr.com/photos/22508531@N08">Like_the_Grand_Canyon</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC 2.0</a><a href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/belaShampoo.jpg" alt="Bela Shampoo" style= "height:285px; width: 500px">
+                  <h6>Bela Shampoo</h6><h6>$ 35</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/40e35ea6-498a-4d7c-89e5-ab5c0eb7ab45-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/91173606@N00/6961368890">"IMG_2765"</a><span>by <a href="https://www.flickr.com/photos/91173606@N00">CAHairyBear</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/horseShampoo.jpg" alt="Cavalier Shampoo" style= "height:285px; width: 540px">
+                  <h6>Cavalier Shampoo</h6><h6>$ 21</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/9c9d737c-d0c3-4c38-9155-88b265ae8e1c-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/15834523@N00/7697171724">"Pine tree shampoo"</a><span>by <a href="https://www.flickr.com/photos/15834523@N00">Julio Martinez</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/pineShampoo.jpg" alt="Pine Tree Shampoo"  style= "height:285px; width: 500px">
+                  <h6>Pine Tree Shampoo</h6><h6>$ 05</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/f4d3de2f-33d3-48ea-a578-363342e0abf6-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/11636141@N00/856872126">"Shampooing and Rincage"</a><span>by <a href="https://www.flickr.com/photos/11636141@N00">laurabot</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/coopShampoo.jpg" alt="CoOp Shampoo" style= "height:285px; width: 500px">
+                  <h6>CoOp Shampoo</h6><h6>$ 09</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/1d95ce3b-7fe2-4f1a-8e70-eefd73a3c125-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/44124277903@N01/580611">"48NF0141"</a><span>by <a href="https://www.flickr.com/photos/44124277903@N01">banoota</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/lushShampoo.jpg" alt="Lush Shampoo" style= "height:285px; width: 540px">
+                  <h6>Lush Shampoo</h6><h6>$ 42</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                                                        <!--End of Shampoo-->
+
+
+                                                        <!--Nails-->
+
+      <div id="Nails" class="tabcontent">
+        <div id="main-content" class="container-fluid" >
+          <div class="main-content" style="margin: 10%; margin-top: 3%;margin-bottom: 3%;padding:1px 16px">
+            <div class="row" style="margin-top: 2%">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/85c5187c-e656-4b1e-9cdc-b5d26270d35d-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/33792132@N00/5991222426">"Flickr meets Sephora"</a><span>by <a href="https://www.flickr.com/photos/33792132@N00">ShortShot</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/belaNail.jpg" alt="Bela Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Bela Nailpaint</h6><h6>$ 14</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/db8cc7c5-2616-4534-9f25-2a763b678ddf-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4268067637">"image 014"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/revlonNail.jpg" alt="Revlon Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Revlon Nailpaint</h6><h6>$ 32</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/a01cb857-3839-49a8-aff0-189aa9a84df7-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/38288030@N00/4831770663">"Goodie-goodie close"</a><span>by <a href="https://www.flickr.com/photos/38288030@N00">duncatra</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/goldyNail.jpg" alt="Goldy Nailpaint" style= "height:285px; width: 540px">
+                 <h6>Goldy Nailpaint</h6><h6>$ 24</h6>
+                 <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/054bba89-e050-4654-9dab-ed2548f26061-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/19535828@N00/5481838137">"27th February 2011"</a><span>by <a href="https://www.flickr.com/photos/19535828@N00">VanessaC (EY)</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/nailsincNail.jpg" alt="Nails Inc. Nailpaint" style= "height:285px; width: 500px">
+                <h6>Nails Inc. Nailpaint</h6><h6>$ 22</h6>
+                <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/1fa2916c-ea65-485c-a227-00c7c45089ff-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4268813486">"image 009"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/glazeNail.jpg" alt="Glaze Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Glaze Nailpaint</h6><h6>$ 60</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/48e41940-2ae8-4f9d-af44-f663b27d5c8a-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/38288030@N00/4832380156">"Artoo blues"</a><span>by <a href="https://www.flickr.com/photos/38288030@N00">duncatra</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/fingerNail.jpg" alt="Finger Nailpaint"  style= "height:285px; width: 500px">
+                  <h6>Finger Nailpaint</h6><h6>$ 40</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/5326adb6-fa96-4ab6-85ba-9befdd4d65fe-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4268066499">"image 019"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/colorNail.jpg" alt="Color Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Color Nailpaint</h6><h6>$ 20</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/23c92b6b-a32c-456d-b865-ab7190a2672f-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/53922214@N00/4665895381">"New Additions"</a><span>by <a href="https://www.flickr.com/photos/53922214@N00">The Infatuated</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-SA 2.0</a><a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/collectionNail.jpg" alt="Collection Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Collection Nailpaint</h6><h6>$ 05</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/57feeb66-3a03-47c3-b047-e78045b1d49b-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4288368487">"OPI - Apricot-cha Cheating - Bottle"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/opiNail.jpg" alt="OPI Nailpaint"  style= "height:285px; width: 500px">
+                  <h6>OPI Nailpaint</h6><h6>$ 12</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/6a11e26b-d9ce-4b9b-b594-ddb7115c3280-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4268840466">"Misa - Fashionista - 1"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/misaNail.jpg" alt="Misa Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Misa Nailpaint</h6><h6>$ 12</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/e26a3c44-5246-4674-abfd-f846ded4eed7-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/45095416@N02/4324428121">"Illamasqua - Milf"</a><span>by <a href="https://www.flickr.com/photos/45095416@N02">blogggles</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img  class="img-thumbnail" src="images/illamasquaNail.jpg" alt="Illamasqua Nailpaint" style= "height:285px; width: 500px">
+                  <h6>Illamasqua Nailpaint</h6><h6>$ 24</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <!--https://ccsearch.creativecommons.org/photos/4e644a73-8360-4b62-bf34-3af722c51546-->
+                <!-- <p style="font-size: 0.9rem;font-style: italic;"><a href="https://www.flickr.com/photos/7573004@N06/3697949232">"Wet'n'Wild Blazed"</a><span>by <a href="https://www.flickr.com/photos/7573004@N06">sewyerown</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC-ND 2.0</a><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;opacity: .7;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-by_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nc_icon.svg" /><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://ccsearch.creativecommons.org/static/img/cc-nd_icon.svg" /></a></p> -->
+                <p><img class="img-thumbnail" src="images/wet&wildNail.jpg" alt="wet&&wild Nailpaint"  style= "height:285px; width: 500px">
+                  <h6>Wet & Wild Nailpaint</h6><h6>$ 35</h6>
+                  <h6><button class="cart-item" style="font-size:15px">Buy<i class="fa fa-shopping-cart"></i></button></h6>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End of Nails-->
+
+
+                                                <!--END OF MAIN CONTENT-->
+
+                                                <!-- Footer -->
+<!--Footer Code adopted from following link:  https://mdbootstrap.com/docs/jquery/navigation/footer/ -->
+      <footer id="footer" class="page-footer font-small unique-color-dark">
+        <div style="background-color: #b1b1cd;">
+          <div class="container">
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0">Get connected with us on social networks!</h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                <!-- Facebook -->
+                <a class="fb-ic" >
+                  <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                  <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase font-weight-bold">You-Beauty</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 20px;">
+              <p>Beauty is in the eyes of beholder :)</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Products</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="#!" class="nav-link2">Face Cream</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2">Lipstick</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2">Nails</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2" >Shampoo</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="#!" class="nav-link2" >Your Account</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2" >Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="nav-link2" >Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> Cardiff,UK</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> info@you-beauty.com</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <p>
+                <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://www.linkedin.com/in/thakurdisha/">Disha Thakur</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+
+      <!-- Footer -->
+
+      <!--Linking JavaScript File-->
+      <script src="web.js"></script>
+    </body>
+  </html>
